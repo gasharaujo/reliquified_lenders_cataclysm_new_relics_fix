@@ -1,0 +1,66 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="reliquified_lenders_cataclysm_new_relics_fix"
+version="1.0.3"
+displayName="Reliquified L_Ender 's Cataclysm new relics fix"
+authors="Gasharaujo"
+description='''
+Compatibility bridge for Reliquified L_Ender's Cataclysm 0.1.1 and Relics 0.12.8.
+Rewrites removed Relics 0.10 API references, adapts relic definitions and
+runtime state, and restores the removed player-motion packet.
+'''
+
+[[mixins]]
+config="reliquified_lenders_cataclysm_new_relics_fix.mixins.json"
+
+[[dependencies.reliquified_lenders_cataclysm_new_relics_fix]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.93,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.reliquified_lenders_cataclysm_new_relics_fix]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.reliquified_lenders_cataclysm_new_relics_fix]]
+modId="relics"
+type="required"
+versionRange="[0.12.8,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.reliquified_lenders_cataclysm_new_relics_fix]]
+modId="reliquified_lenders_cataclysm"
+type="required"
+versionRange="[0.1.1,)"
+ordering="BEFORE"
+side="BOTH"
+
+[[dependencies.reliquified_lenders_cataclysm_new_relics_fix]]
+modId="curios"
+type="required"
+versionRange="[9.5.1,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.reliquified_lenders_cataclysm_new_relics_fix]]
+modId="octolib"
+type="required"
+versionRange="[0.6.0.2,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.reliquified_lenders_cataclysm_new_relics_fix]]
+modId="cataclysm"
+type="required"
+versionRange="[1,)"
+ordering="AFTER"
+side="BOTH"

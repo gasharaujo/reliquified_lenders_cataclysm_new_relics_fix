@@ -1,0 +1,877 @@
+Compiled from "VoidCloakItem.java"
+public class it.hurts.octostudios.reliquified_lenders_cataclysm.items.relics.back.VoidCloakItem extends it.hurts.octostudios.reliquified_lenders_cataclysm.items.base.RECItem {
+  public it.hurts.octostudios.reliquified_lenders_cataclysm.items.relics.back.VoidCloakItem();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method it/hurts/octostudios/reliquified_lenders_cataclysm/items/base/RECItem."<init>":()V
+       4: return
+
+  public it.hurts.sskirillss.relics.items.relics.base.data.RelicData constructDefaultRelicData();
+    Code:
+       0: invokestatic  #7                  // Method it/hurts/sskirillss/relics/items/relics/base/data/RelicData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder;
+       3: invokestatic  #13                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData$AbilitiesDataBuilder;
+       6: ldc           #18                 // String void_invulnerability
+       8: invokestatic  #20                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData.builder:(Ljava/lang/String;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder;
+      11: invokevirtual #25                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData;
+      14: invokevirtual #31                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData$AbilitiesDataBuilder.ability:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData$AbilitiesDataBuilder;
+      17: ldc           #37                 // String void_rune
+      19: invokestatic  #20                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData.builder:(Ljava/lang/String;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder;
+      22: invokestatic  #39                 // Method it/hurts/sskirillss/relics/items/relics/base/data/cast/CastData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/cast/CastData$CastDataBuilder;
+      25: getstatic     #44                 // Field it/hurts/sskirillss/relics/items/relics/base/data/cast/misc/CastType.TOGGLEABLE:Lit/hurts/sskirillss/relics/items/relics/base/data/cast/misc/CastType;
+      28: invokevirtual #50                 // Method it/hurts/sskirillss/relics/items/relics/base/data/cast/CastData$CastDataBuilder.type:(Lit/hurts/sskirillss/relics/items/relics/base/data/cast/misc/CastType;)Lit/hurts/sskirillss/relics/items/relics/base/data/cast/CastData$CastDataBuilder;
+      31: invokevirtual #56                 // Method it/hurts/sskirillss/relics/items/relics/base/data/cast/CastData$CastDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/cast/CastData;
+      34: invokevirtual #59                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder.active:(Lit/hurts/sskirillss/relics/items/relics/base/data/cast/CastData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder;
+      37: ldc           #63                 // String cooldown
+      39: invokestatic  #65                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData.builder:(Ljava/lang/String;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+      42: ldc2_w        #70                 // double 20.0d
+      45: ldc2_w        #72                 // double 16.0d
+      48: invokevirtual #74                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.initialValue:(DD)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+      51: getstatic     #80                 // Field it/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation.MULTIPLY_BASE:Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation;
+      54: ldc2_w        #86                 // double -0.05625d
+      57: invokevirtual #88                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.upgradeModifier:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation;D)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+      60: invokedynamic #92,  0             // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+      65: invokevirtual #96                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.formatValue:(Ljava/util/function/Function;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+      68: invokevirtual #100                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData;
+      71: invokevirtual #103                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder.stat:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder;
+      74: ldc           #107                // String damage
+      76: invokestatic  #65                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData.builder:(Ljava/lang/String;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+      79: ldc2_w        #109                // double 1.4d
+      82: ldc2_w        #111                // double 1.76d
+      85: invokevirtual #74                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.initialValue:(DD)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+      88: getstatic     #80                 // Field it/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation.MULTIPLY_BASE:Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation;
+      91: ldc2_w        #113                // double 0.525d
+      94: invokevirtual #88                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.upgradeModifier:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation;D)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+      97: invokedynamic #115,  0            // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+     102: invokevirtual #96                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.formatValue:(Ljava/util/function/Function;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     105: invokevirtual #100                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData;
+     108: invokevirtual #103                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder.stat:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder;
+     111: invokevirtual #25                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData;
+     114: invokevirtual #31                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData$AbilitiesDataBuilder.ability:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData$AbilitiesDataBuilder;
+     117: ldc           #116                // String seismic_zone
+     119: invokestatic  #20                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData.builder:(Ljava/lang/String;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder;
+     122: iconst_5
+     123: invokevirtual #118                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder.requiredLevel:(I)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder;
+     126: ldc           #122                // String radius
+     128: invokestatic  #65                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData.builder:(Ljava/lang/String;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     131: ldc2_w        #124                // double 2.0d
+     134: ldc2_w        #126                // double 3.0d
+     137: invokevirtual #74                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.initialValue:(DD)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     140: getstatic     #128                // Field it/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation.ADD:Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation;
+     143: ldc2_w        #131                // double 0.5d
+     146: invokevirtual #88                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.upgradeModifier:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation;D)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     149: invokedynamic #133,  0            // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+     154: invokevirtual #96                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.formatValue:(Ljava/util/function/Function;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     157: invokevirtual #100                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData;
+     160: invokevirtual #103                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder.stat:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder;
+     163: ldc           #134                // String waves
+     165: invokestatic  #65                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData.builder:(Ljava/lang/String;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     168: ldc2_w        #124                // double 2.0d
+     171: ldc2_w        #126                // double 3.0d
+     174: invokevirtual #74                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.initialValue:(DD)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     177: getstatic     #128                // Field it/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation.ADD:Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation;
+     180: ldc2_w        #131                // double 0.5d
+     183: invokevirtual #88                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.upgradeModifier:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation;D)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     186: invokedynamic #133,  0            // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+     191: invokevirtual #96                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.formatValue:(Ljava/util/function/Function;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     194: invokevirtual #100                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData;
+     197: invokevirtual #103                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder.stat:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder;
+     200: ldc           #107                // String damage
+     202: invokestatic  #65                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData.builder:(Ljava/lang/String;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     205: ldc2_w        #109                // double 1.4d
+     208: ldc2_w        #111                // double 1.76d
+     211: invokevirtual #74                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.initialValue:(DD)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     214: getstatic     #80                 // Field it/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation.MULTIPLY_BASE:Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation;
+     217: ldc2_w        #113                // double 0.525d
+     220: invokevirtual #88                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.upgradeModifier:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation;D)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     223: invokedynamic #115,  0            // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+     228: invokevirtual #96                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.formatValue:(Ljava/util/function/Function;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     231: invokevirtual #100                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData;
+     234: invokevirtual #103                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder.stat:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder;
+     237: invokevirtual #25                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData;
+     240: invokevirtual #31                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData$AbilitiesDataBuilder.ability:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData$AbilitiesDataBuilder;
+     243: invokevirtual #136                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData$AbilitiesDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData;
+     246: invokevirtual #139                // Method it/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder.abilities:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData;)Lit/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder;
+     249: invokestatic  #145                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder;
+     252: bipush        100
+     254: invokevirtual #150                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder.initialCost:(I)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder;
+     257: bipush        100
+     259: invokevirtual #156                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder.step:(I)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder;
+     262: bipush        15
+     264: invokevirtual #159                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder.maxLevel:(I)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder;
+     267: invokestatic  #162                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData$LevelingSourcesDataBuilder;
+     270: ldc           #37                 // String void_rune
+     272: invokestatic  #167                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData.abilityBuilder:(Ljava/lang/String;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData$LevelingSourceDataBuilder;
+     275: getstatic     #173                // Field it/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemShape.SQUARE:Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemShape;
+     278: getstatic     #179                // Field it/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemColor.PURPLE:Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemColor;
+     281: invokevirtual #185                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData$LevelingSourceDataBuilder.gem:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemShape;Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemColor;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData$LevelingSourceDataBuilder;
+     284: invokevirtual #191                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData$LevelingSourceDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData;
+     287: invokevirtual #194                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData$LevelingSourcesDataBuilder.source:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData$LevelingSourcesDataBuilder;
+     290: ldc           #116                // String seismic_zone
+     292: invokestatic  #167                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData.abilityBuilder:(Ljava/lang/String;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData$LevelingSourceDataBuilder;
+     295: getstatic     #173                // Field it/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemShape.SQUARE:Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemShape;
+     298: getstatic     #200                // Field it/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemColor.ORANGE:Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemColor;
+     301: invokevirtual #185                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData$LevelingSourceDataBuilder.gem:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemShape;Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemColor;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData$LevelingSourceDataBuilder;
+     304: invokevirtual #191                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData$LevelingSourceDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData;
+     307: invokevirtual #194                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData$LevelingSourcesDataBuilder.source:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData$LevelingSourcesDataBuilder;
+     310: invokevirtual #203                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData$LevelingSourcesDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData;
+     313: invokevirtual #206                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder.sources:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder;
+     316: invokevirtual #210                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData;
+     319: invokevirtual #213                // Method it/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder.leveling:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData;)Lit/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder;
+     322: invokestatic  #217                // Method it/hurts/sskirillss/relics/items/relics/base/data/loot/LootData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/loot/LootData$LootDataBuilder;
+     325: iconst_3
+     326: anewarray     #222                // class it/hurts/sskirillss/relics/items/relics/base/data/loot/LootEntry
+     329: dup
+     330: iconst_0
+     331: getstatic     #224                // Field it/hurts/octostudios/reliquified_lenders_cataclysm/items/base/data/RECLootEntries.CURSED_PYRAMID:Lit/hurts/sskirillss/relics/items/relics/base/data/loot/LootEntry;
+     334: aastore
+     335: dup
+     336: iconst_1
+     337: getstatic     #230                // Field it/hurts/octostudios/reliquified_lenders_cataclysm/items/base/data/RECLootEntries.FROSTED_PRISON:Lit/hurts/sskirillss/relics/items/relics/base/data/loot/LootEntry;
+     340: aastore
+     341: dup
+     342: iconst_2
+     343: getstatic     #233                // Field it/hurts/sskirillss/relics/items/relics/base/data/loot/misc/LootEntries.THE_END:Lit/hurts/sskirillss/relics/items/relics/base/data/loot/LootEntry;
+     346: aastore
+     347: invokevirtual #238                // Method it/hurts/sskirillss/relics/items/relics/base/data/loot/LootData$LootDataBuilder.entry:([Lit/hurts/sskirillss/relics/items/relics/base/data/loot/LootEntry;)Lit/hurts/sskirillss/relics/items/relics/base/data/loot/LootData$LootDataBuilder;
+     350: invokevirtual #244                // Method it/hurts/sskirillss/relics/items/relics/base/data/loot/LootData$LootDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/loot/LootData;
+     353: invokevirtual #247                // Method it/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder.loot:(Lit/hurts/sskirillss/relics/items/relics/base/data/loot/LootData;)Lit/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder;
+     356: invokestatic  #251                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/StyleData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/style/StyleData$StyleDataBuilder;
+     359: invokestatic  #256                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder;
+     362: ldc_w         #261                // int -4616238
+     365: invokevirtual #262                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder.borderTop:(I)Lit/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder;
+     368: ldc_w         #268                // int -7774812
+     371: invokevirtual #269                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder.borderBottom:(I)Lit/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder;
+     374: iconst_1
+     375: invokevirtual #272                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder.textured:(Z)Lit/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder;
+     378: invokevirtual #276                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData;
+     381: invokevirtual #279                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/StyleData$StyleDataBuilder.tooltip:(Lit/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData;)Lit/hurts/sskirillss/relics/items/relics/base/data/style/StyleData$StyleDataBuilder;
+     384: invokestatic  #285                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData$BeamsDataBuilder;
+     387: ldc_w         #261                // int -4616238
+     390: invokevirtual #290                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData$BeamsDataBuilder.startColor:(I)Lit/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData$BeamsDataBuilder;
+     393: ldc_w         #296                // int 16310422
+     396: invokevirtual #297                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData$BeamsDataBuilder.endColor:(I)Lit/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData$BeamsDataBuilder;
+     399: invokevirtual #300                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData$BeamsDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData;
+     402: invokevirtual #303                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/StyleData$StyleDataBuilder.beams:(Lit/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData;)Lit/hurts/sskirillss/relics/items/relics/base/data/style/StyleData$StyleDataBuilder;
+     405: invokevirtual #307                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/StyleData$StyleDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/style/StyleData;
+     408: invokevirtual #310                // Method it/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder.style:(Lit/hurts/sskirillss/relics/items/relics/base/data/style/StyleData;)Lit/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder;
+     411: invokevirtual #314                // Method it/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/RelicData;
+     414: areturn
+
+  public void curioTick(top.theillusivec4.curios.api.SlotContext, net.minecraft.world.item.ItemStack);
+    Code:
+       0: aload_2
+       1: invokevirtual #317                // Method net/minecraft/world/item/ItemStack.isEmpty:()Z
+       4: ifne          37
+       7: aload_1
+       8: invokevirtual #323                // Method top/theillusivec4/curios/api/SlotContext.entity:()Lnet/minecraft/world/entity/LivingEntity;
+      11: astore        4
+      13: aload         4
+      15: instanceof    #329                // class net/minecraft/world/entity/player/Player
+      18: ifeq          37
+      21: aload         4
+      23: checkcast     #329                // class net/minecraft/world/entity/player/Player
+      26: astore_3
+      27: aload_0
+      28: aload_2
+      29: ldc           #37                 // String void_rune
+      31: invokevirtual #331                // Method isAbilityTicking:(Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;)Z
+      34: ifne          38
+      37: return
+      38: aload_3
+      39: invokevirtual #337                // Method net/minecraft/world/entity/player/Player.getCommandSenderWorld:()Lnet/minecraft/world/level/Level;
+      42: astore        4
+      44: aload         4
+      46: getfield      #341                // Field net/minecraft/world/level/Level.isClientSide:Z
+      49: ifeq          53
+      52: return
+      53: aload_2
+      54: getstatic     #347                // Field it/hurts/octostudios/reliquified_lenders_cataclysm/init/RECDataComponentRegistry.VOID_RUNE_TIME:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      57: iconst_0
+      58: invokestatic  #353                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      61: invokevirtual #359                // Method net/minecraft/world/item/ItemStack.getOrDefault:(Ljava/util/function/Supplier;Ljava/lang/Object;)Ljava/lang/Object;
+      64: checkcast     #354                // class java/lang/Integer
+      67: invokevirtual #363                // Method java/lang/Integer.intValue:()I
+      70: istore        5
+      72: iload         5
+      74: ifle          83
+      77: iinc          5, -1
+      80: goto          254
+      83: aload_3
+      84: aload         4
+      86: aload_3
+      87: invokevirtual #367                // Method net/minecraft/world/entity/player/Player.getBoundingBox:()Lnet/minecraft/world/phys/AABB;
+      90: ldc2_w        #371                // double 10.0d
+      93: invokevirtual #373                // Method net/minecraft/world/phys/AABB.inflate:(D)Lnet/minecraft/world/phys/AABB;
+      96: invokestatic  #379                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/ItemUtils.getEntitiesInArea:(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/phys/AABB;)Ljava/util/List;
+      99: astore        6
+     101: iconst_0
+     102: istore        7
+     104: aload         6
+     106: invokeinterface #385,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     111: astore        8
+     113: aload         8
+     115: invokeinterface #391,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     120: ifeq          241
+     123: aload         8
+     125: invokeinterface #396,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     130: checkcast     #400                // class net/minecraft/world/entity/LivingEntity
+     133: astore        9
+     135: aload         9
+     137: ifnull        113
+     140: aload         9
+     142: aload_3
+     143: invokevirtual #402                // Method net/minecraft/world/entity/LivingEntity.equals:(Ljava/lang/Object;)Z
+     146: ifne          113
+     149: aload         9
+     151: instanceof    #406                // class net/minecraft/world/entity/decoration/ArmorStand
+     154: ifne          113
+     157: aload_3
+     158: aload         9
+     160: invokestatic  #408                // Method it/hurts/sskirillss/relics/utils/EntityUtils.isAlliedTo:(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/Entity;)Z
+     163: ifeq          169
+     166: goto          113
+     169: aload         9
+     171: instanceof    #414                // class net/minecraft/world/entity/Mob
+     174: ifeq          223
+     177: aload         9
+     179: checkcast     #414                // class net/minecraft/world/entity/Mob
+     182: astore        10
+     184: aload         10
+     186: invokevirtual #416                // Method net/minecraft/world/entity/Mob.getTarget:()Lnet/minecraft/world/entity/LivingEntity;
+     189: astore        11
+     191: aload         11
+     193: ifnull        220
+     196: aload         11
+     198: aload_3
+     199: invokevirtual #419                // Method net/minecraft/world/entity/LivingEntity.is:(Lnet/minecraft/world/entity/Entity;)Z
+     202: ifeq          220
+     205: aload         4
+     207: aload_3
+     208: aload         10
+     210: aload_2
+     211: invokestatic  #423                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/VoidCloakUtils.spawnVoidRune:(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V
+     214: iconst_1
+     215: istore        7
+     217: goto          241
+     220: goto          238
+     223: aload         4
+     225: aload_3
+     226: aload         9
+     228: aload_2
+     229: invokestatic  #423                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/VoidCloakUtils.spawnVoidRune:(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V
+     232: iconst_1
+     233: istore        7
+     235: goto          241
+     238: goto          113
+     241: iload         7
+     243: ifeq          254
+     246: aload_2
+     247: ldc           #37                 // String void_rune
+     249: invokestatic  #429                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/ItemUtils.getCooldownStat:(Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;)I
+     252: istore        5
+     254: aload_2
+     255: getstatic     #347                // Field it/hurts/octostudios/reliquified_lenders_cataclysm/init/RECDataComponentRegistry.VOID_RUNE_TIME:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     258: iload         5
+     260: invokestatic  #353                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     263: invokevirtual #433                // Method net/minecraft/world/item/ItemStack.set:(Ljava/util/function/Supplier;Ljava/lang/Object;)Ljava/lang/Object;
+     266: pop
+     267: return
+
+  public static void onLivingDamage(net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent);
+    Code:
+       0: aload_0
+       1: invokevirtual #436                // Method net/neoforged/neoforge/event/entity/living/LivingIncomingDamageEvent.getSource:()Lnet/minecraft/world/damagesource/DamageSource;
+       4: invokevirtual #442                // Method net/minecraft/world/damagesource/DamageSource.getDirectEntity:()Lnet/minecraft/world/entity/Entity;
+       7: astore_3
+       8: aload_3
+       9: instanceof    #448                // class com/github/L_Ender/cataclysm/entity/projectile/Void_Rune_Entity
+      12: ifeq          40
+      15: aload_3
+      16: checkcast     #448                // class com/github/L_Ender/cataclysm/entity/projectile/Void_Rune_Entity
+      19: astore_1
+      20: aload_1
+      21: invokevirtual #450                // Method com/github/L_Ender/cataclysm/entity/projectile/Void_Rune_Entity.getCaster:()Lnet/minecraft/world/entity/LivingEntity;
+      24: astore_3
+      25: aload_3
+      26: instanceof    #329                // class net/minecraft/world/entity/player/Player
+      29: ifeq          40
+      32: aload_3
+      33: checkcast     #329                // class net/minecraft/world/entity/player/Player
+      36: astore_2
+      37: goto          41
+      40: return
+      41: aload_2
+      42: getstatic     #453                // Field it/hurts/octostudios/reliquified_lenders_cataclysm/init/ItemRegistry.VOID_CLOAK:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      45: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      48: checkcast     #463                // class net/minecraft/world/item/Item
+      51: invokestatic  #465                // Method it/hurts/sskirillss/relics/utils/EntityUtils.findEquippedCurio:(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/item/Item;)Lnet/minecraft/world/item/ItemStack;
+      54: astore_3
+      55: aload_3
+      56: invokevirtual #317                // Method net/minecraft/world/item/ItemStack.isEmpty:()Z
+      59: ifne          86
+      62: aload_3
+      63: invokevirtual #469                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+      66: astore        5
+      68: aload         5
+      70: instanceof    #332                // class it/hurts/octostudios/reliquified_lenders_cataclysm/items/relics/back/VoidCloakItem
+      73: ifeq          86
+      76: aload         5
+      78: checkcast     #332                // class it/hurts/octostudios/reliquified_lenders_cataclysm/items/relics/back/VoidCloakItem
+      81: astore        4
+      83: goto          87
+      86: return
+      87: aload         4
+      89: aload_2
+      90: aload_3
+      91: iconst_1
+      92: invokevirtual #473                // Method spreadRelicExperience:(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;I)V
+      95: return
+
+  public static void onPlayerDamage(net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent);
+    Code:
+       0: aload_0
+       1: invokevirtual #477                // Method net/neoforged/neoforge/event/entity/living/LivingIncomingDamageEvent.getEntity:()Lnet/minecraft/world/entity/LivingEntity;
+       4: astore_2
+       5: aload_2
+       6: instanceof    #329                // class net/minecraft/world/entity/player/Player
+       9: ifeq          27
+      12: aload_2
+      13: checkcast     #329                // class net/minecraft/world/entity/player/Player
+      16: astore_1
+      17: aload_1
+      18: invokevirtual #337                // Method net/minecraft/world/entity/player/Player.getCommandSenderWorld:()Lnet/minecraft/world/level/Level;
+      21: getfield      #341                // Field net/minecraft/world/level/Level.isClientSide:Z
+      24: ifeq          28
+      27: return
+      28: aload_0
+      29: invokevirtual #436                // Method net/neoforged/neoforge/event/entity/living/LivingIncomingDamageEvent.getSource:()Lnet/minecraft/world/damagesource/DamageSource;
+      32: invokevirtual #442                // Method net/minecraft/world/damagesource/DamageSource.getDirectEntity:()Lnet/minecraft/world/entity/Entity;
+      35: astore_3
+      36: aload_3
+      37: instanceof    #448                // class com/github/L_Ender/cataclysm/entity/projectile/Void_Rune_Entity
+      40: ifeq          76
+      43: aload_3
+      44: checkcast     #448                // class com/github/L_Ender/cataclysm/entity/projectile/Void_Rune_Entity
+      47: astore_2
+      48: aload_2
+      49: invokevirtual #450                // Method com/github/L_Ender/cataclysm/entity/projectile/Void_Rune_Entity.getCaster:()Lnet/minecraft/world/entity/LivingEntity;
+      52: astore_3
+      53: aload_3
+      54: ifnull        76
+      57: aload_3
+      58: invokevirtual #480                // Method net/minecraft/world/entity/LivingEntity.getUUID:()Ljava/util/UUID;
+      61: aload_1
+      62: invokevirtual #484                // Method net/minecraft/world/entity/player/Player.getUUID:()Ljava/util/UUID;
+      65: invokevirtual #485                // Method java/util/UUID.equals:(Ljava/lang/Object;)Z
+      68: ifeq          76
+      71: aload_0
+      72: iconst_1
+      73: invokevirtual #488                // Method net/neoforged/neoforge/event/entity/living/LivingIncomingDamageEvent.setCanceled:(Z)V
+      76: aload_1
+      77: getstatic     #453                // Field it/hurts/octostudios/reliquified_lenders_cataclysm/init/ItemRegistry.VOID_CLOAK:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      80: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      83: checkcast     #463                // class net/minecraft/world/item/Item
+      86: invokestatic  #465                // Method it/hurts/sskirillss/relics/utils/EntityUtils.findEquippedCurio:(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/item/Item;)Lnet/minecraft/world/item/ItemStack;
+      89: astore_2
+      90: aload_2
+      91: invokevirtual #317                // Method net/minecraft/world/item/ItemStack.isEmpty:()Z
+      94: ifne          107
+      97: aload_2
+      98: invokevirtual #469                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+     101: instanceof    #332                // class it/hurts/octostudios/reliquified_lenders_cataclysm/items/relics/back/VoidCloakItem
+     104: ifne          108
+     107: return
+     108: aload_1
+     109: invokevirtual #492                // Method net/minecraft/world/entity/player/Player.getY:()D
+     112: aload_1
+     113: invokevirtual #337                // Method net/minecraft/world/entity/player/Player.getCommandSenderWorld:()Lnet/minecraft/world/level/Level;
+     116: invokevirtual #496                // Method net/minecraft/world/level/Level.getMinBuildHeight:()I
+     119: i2d
+     120: dcmpg
+     121: ifge          129
+     124: aload_0
+     125: iconst_1
+     126: invokevirtual #488                // Method net/neoforged/neoforge/event/entity/living/LivingIncomingDamageEvent.setCanceled:(Z)V
+     129: return
+
+  public static void onEntityDeath(net.neoforged.neoforge.event.entity.living.LivingDeathEvent);
+    Code:
+       0: aload_0
+       1: invokevirtual #499                // Method net/neoforged/neoforge/event/entity/living/LivingDeathEvent.getEntity:()Lnet/minecraft/world/entity/LivingEntity;
+       4: astore_1
+       5: aconst_null
+       6: astore_2
+       7: aload_1
+       8: instanceof    #329                // class net/minecraft/world/entity/player/Player
+      11: ifeq          22
+      14: aload_1
+      15: checkcast     #329                // class net/minecraft/world/entity/player/Player
+      18: astore_2
+      19: goto          64
+      22: aload_1
+      23: instanceof    #502                // class net/minecraft/world/entity/OwnableEntity
+      26: ifeq          64
+      29: aload_1
+      30: checkcast     #502                // class net/minecraft/world/entity/OwnableEntity
+      33: astore_3
+      34: aload_3
+      35: invokeinterface #504,  1          // InterfaceMethod net/minecraft/world/entity/OwnableEntity.getOwner:()Lnet/minecraft/world/entity/LivingEntity;
+      40: astore        4
+      42: aload         4
+      44: instanceof    #329                // class net/minecraft/world/entity/player/Player
+      47: ifeq          60
+      50: aload         4
+      52: checkcast     #329                // class net/minecraft/world/entity/player/Player
+      55: astore        5
+      57: goto          61
+      60: return
+      61: aload         5
+      63: astore_2
+      64: aload_2
+      65: ifnonnull     69
+      68: return
+      69: aload_2
+      70: getstatic     #453                // Field it/hurts/octostudios/reliquified_lenders_cataclysm/init/ItemRegistry.VOID_CLOAK:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      73: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      76: checkcast     #463                // class net/minecraft/world/item/Item
+      79: invokestatic  #465                // Method it/hurts/sskirillss/relics/utils/EntityUtils.findEquippedCurio:(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/item/Item;)Lnet/minecraft/world/item/ItemStack;
+      82: astore_3
+      83: aload_3
+      84: invokevirtual #317                // Method net/minecraft/world/item/ItemStack.isEmpty:()Z
+      87: ifne          122
+      90: aload_3
+      91: invokevirtual #469                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+      94: astore        5
+      96: aload         5
+      98: instanceof    #332                // class it/hurts/octostudios/reliquified_lenders_cataclysm/items/relics/back/VoidCloakItem
+     101: ifeq          122
+     104: aload         5
+     106: checkcast     #332                // class it/hurts/octostudios/reliquified_lenders_cataclysm/items/relics/back/VoidCloakItem
+     109: astore        4
+     111: aload         4
+     113: aload_3
+     114: ldc           #116                // String seismic_zone
+     116: invokevirtual #507                // Method isAbilityUnlocked:(Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;)Z
+     119: ifne          123
+     122: return
+     123: aload_2
+     124: invokevirtual #337                // Method net/minecraft/world/entity/player/Player.getCommandSenderWorld:()Lnet/minecraft/world/level/Level;
+     127: astore        5
+     129: aload         5
+     131: getfield      #341                // Field net/minecraft/world/level/Level.isClientSide:Z
+     134: ifeq          138
+     137: return
+     138: aload         5
+     140: aload_2
+     141: aload_1
+     142: invokevirtual #510                // Method net/minecraft/world/entity/LivingEntity.getX:()D
+     145: aload_1
+     146: invokevirtual #513                // Method net/minecraft/world/entity/LivingEntity.getY:()D
+     149: aload_1
+     150: invokevirtual #514                // Method net/minecraft/world/entity/LivingEntity.getZ:()D
+     153: fconst_1
+     154: iconst_0
+     155: getstatic     #517                // Field net/minecraft/world/level/Level$ExplosionInteraction.NONE:Lnet/minecraft/world/level/Level$ExplosionInteraction;
+     158: invokevirtual #523                // Method net/minecraft/world/level/Level.explode:(Lnet/minecraft/world/entity/Entity;DDDFZLnet/minecraft/world/level/Level$ExplosionInteraction;)Lnet/minecraft/world/level/Explosion;
+     161: pop
+     162: aload         5
+     164: aload_2
+     165: aload_1
+     166: aload_3
+     167: invokestatic  #527                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/VoidCloakUtils.spawnSeismicZone:(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;)V
+     170: aload         4
+     172: aload_2
+     173: aload_3
+     174: iconst_5
+     175: invokevirtual #473                // Method spreadRelicExperience:(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;I)V
+     178: return
+}
+Compiled from "ScouringEyeItem.java"
+public class it.hurts.octostudios.reliquified_lenders_cataclysm.items.relics.charm.ScouringEyeItem extends it.hurts.octostudios.reliquified_lenders_cataclysm.items.base.RECItem {
+  public it.hurts.octostudios.reliquified_lenders_cataclysm.items.relics.charm.ScouringEyeItem();
+    Code:
+       0: aload_0
+       1: invokespecial #3                  // Method it/hurts/octostudios/reliquified_lenders_cataclysm/items/base/RECItem."<init>":()V
+       4: return
+
+  public it.hurts.sskirillss.relics.items.relics.base.data.RelicData constructDefaultRelicData();
+    Code:
+       0: invokestatic  #9                  // Method it/hurts/sskirillss/relics/items/relics/base/data/RelicData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder;
+       3: invokestatic  #15                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData$AbilitiesDataBuilder;
+       6: ldc           #20                 // String glowing_scour
+       8: invokestatic  #22                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData.builder:(Ljava/lang/String;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder;
+      11: invokestatic  #27                 // Method it/hurts/sskirillss/relics/items/relics/base/data/cast/CastData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/cast/CastData$CastDataBuilder;
+      14: getstatic     #32                 // Field it/hurts/sskirillss/relics/items/relics/base/data/cast/misc/CastType.INSTANTANEOUS:Lit/hurts/sskirillss/relics/items/relics/base/data/cast/misc/CastType;
+      17: invokevirtual #38                 // Method it/hurts/sskirillss/relics/items/relics/base/data/cast/CastData$CastDataBuilder.type:(Lit/hurts/sskirillss/relics/items/relics/base/data/cast/misc/CastType;)Lit/hurts/sskirillss/relics/items/relics/base/data/cast/CastData$CastDataBuilder;
+      20: ldc           #44                 // String target
+      22: getstatic     #46                 // Field it/hurts/sskirillss/relics/items/relics/base/data/cast/misc/PredicateType.CAST:Lit/hurts/sskirillss/relics/items/relics/base/data/cast/misc/PredicateType;
+      25: invokedynamic #52,  0             // InvokeDynamic #0:apply:()Ljava/util/function/BiFunction;
+      30: invokevirtual #56                 // Method it/hurts/sskirillss/relics/items/relics/base/data/cast/CastData$CastDataBuilder.predicate:(Ljava/lang/String;Lit/hurts/sskirillss/relics/items/relics/base/data/cast/misc/PredicateType;Ljava/util/function/BiFunction;)Lit/hurts/sskirillss/relics/items/relics/base/data/cast/CastData$CastDataBuilder;
+      33: ldc           #60                 // String tp_allowed
+      35: getstatic     #46                 // Field it/hurts/sskirillss/relics/items/relics/base/data/cast/misc/PredicateType.CAST:Lit/hurts/sskirillss/relics/items/relics/base/data/cast/misc/PredicateType;
+      38: invokedynamic #62,  0             // InvokeDynamic #1:apply:()Ljava/util/function/BiFunction;
+      43: invokevirtual #56                 // Method it/hurts/sskirillss/relics/items/relics/base/data/cast/CastData$CastDataBuilder.predicate:(Ljava/lang/String;Lit/hurts/sskirillss/relics/items/relics/base/data/cast/misc/PredicateType;Ljava/util/function/BiFunction;)Lit/hurts/sskirillss/relics/items/relics/base/data/cast/CastData$CastDataBuilder;
+      46: invokevirtual #63                 // Method it/hurts/sskirillss/relics/items/relics/base/data/cast/CastData$CastDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/cast/CastData;
+      49: invokevirtual #67                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder.active:(Lit/hurts/sskirillss/relics/items/relics/base/data/cast/CastData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder;
+      52: ldc           #73                 // String cooldown
+      54: invokestatic  #75                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData.builder:(Ljava/lang/String;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+      57: ldc2_w        #80                 // double 20.0d
+      60: ldc2_w        #82                 // double 15.0d
+      63: invokevirtual #84                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.initialValue:(DD)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+      66: getstatic     #90                 // Field it/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation.ADD:Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation;
+      69: ldc2_w        #96                 // double -1.0d
+      72: invokevirtual #98                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.upgradeModifier:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation;D)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+      75: invokedynamic #102,  0            // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+      80: invokevirtual #105                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.formatValue:(Ljava/util/function/Function;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+      83: invokevirtual #109                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData;
+      86: invokevirtual #112                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder.stat:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder;
+      89: ldc           #116                // String glowing_time
+      91: invokestatic  #75                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData.builder:(Ljava/lang/String;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+      94: ldc2_w        #118                // double 10.0d
+      97: ldc2_w        #120                // double 12.0d
+     100: invokevirtual #84                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.initialValue:(DD)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     103: getstatic     #122                // Field it/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation.MULTIPLY_BASE:Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation;
+     106: ldc2_w        #125                // double 0.525d
+     109: invokevirtual #98                 // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.upgradeModifier:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/UpgradeOperation;D)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     112: invokedynamic #127,  0            // InvokeDynamic #3:apply:()Ljava/util/function/Function;
+     117: invokevirtual #105                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.formatValue:(Ljava/util/function/Function;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder;
+     120: invokevirtual #109                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData$StatDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData;
+     123: invokevirtual #112                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder.stat:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/StatData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder;
+     126: invokevirtual #128                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData$AbilityDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData;
+     129: invokevirtual #131                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData$AbilitiesDataBuilder.ability:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilityData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData$AbilitiesDataBuilder;
+     132: invokevirtual #137                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData$AbilitiesDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData;
+     135: invokevirtual #140                // Method it/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder.abilities:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/AbilitiesData;)Lit/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder;
+     138: invokestatic  #146                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder;
+     141: bipush        100
+     143: invokevirtual #151                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder.initialCost:(I)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder;
+     146: bipush        100
+     148: invokevirtual #157                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder.step:(I)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder;
+     151: bipush        10
+     153: invokevirtual #160                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder.maxLevel:(I)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder;
+     156: invokestatic  #163                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData$LevelingSourcesDataBuilder;
+     159: ldc           #20                 // String glowing_scour
+     161: invokestatic  #168                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData.abilityBuilder:(Ljava/lang/String;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData$LevelingSourceDataBuilder;
+     164: getstatic     #174                // Field it/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemShape.SQUARE:Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemShape;
+     167: getstatic     #180                // Field it/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemColor.PURPLE:Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemColor;
+     170: invokevirtual #186                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData$LevelingSourceDataBuilder.gem:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemShape;Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/misc/GemColor;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData$LevelingSourceDataBuilder;
+     173: invokevirtual #192                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData$LevelingSourceDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData;
+     176: invokevirtual #195                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData$LevelingSourcesDataBuilder.source:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourceData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData$LevelingSourcesDataBuilder;
+     179: invokevirtual #201                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData$LevelingSourcesDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData;
+     182: invokevirtual #204                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder.sources:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingSourcesData;)Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder;
+     185: invokevirtual #208                // Method it/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData$LevelingDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData;
+     188: invokevirtual #211                // Method it/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder.leveling:(Lit/hurts/sskirillss/relics/items/relics/base/data/leveling/LevelingData;)Lit/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder;
+     191: invokestatic  #215                // Method it/hurts/sskirillss/relics/items/relics/base/data/loot/LootData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/loot/LootData$LootDataBuilder;
+     194: iconst_2
+     195: anewarray     #220                // class it/hurts/sskirillss/relics/items/relics/base/data/loot/LootEntry
+     198: dup
+     199: iconst_0
+     200: getstatic     #222                // Field it/hurts/octostudios/reliquified_lenders_cataclysm/items/base/data/RECLootEntries.CURSED_PYRAMID:Lit/hurts/sskirillss/relics/items/relics/base/data/loot/LootEntry;
+     203: aastore
+     204: dup
+     205: iconst_1
+     206: getstatic     #228                // Field it/hurts/sskirillss/relics/items/relics/base/data/loot/misc/LootEntries.THE_END:Lit/hurts/sskirillss/relics/items/relics/base/data/loot/LootEntry;
+     209: aastore
+     210: invokevirtual #233                // Method it/hurts/sskirillss/relics/items/relics/base/data/loot/LootData$LootDataBuilder.entry:([Lit/hurts/sskirillss/relics/items/relics/base/data/loot/LootEntry;)Lit/hurts/sskirillss/relics/items/relics/base/data/loot/LootData$LootDataBuilder;
+     213: invokevirtual #239                // Method it/hurts/sskirillss/relics/items/relics/base/data/loot/LootData$LootDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/loot/LootData;
+     216: invokevirtual #242                // Method it/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder.loot:(Lit/hurts/sskirillss/relics/items/relics/base/data/loot/LootData;)Lit/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder;
+     219: invokestatic  #246                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/StyleData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/style/StyleData$StyleDataBuilder;
+     222: invokestatic  #251                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder;
+     225: ldc_w         #256                // int -6196783
+     228: invokevirtual #257                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder.borderTop:(I)Lit/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder;
+     231: ldc_w         #263                // int -8109653
+     234: invokevirtual #264                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder.borderBottom:(I)Lit/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder;
+     237: iconst_1
+     238: invokevirtual #267                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder.textured:(Z)Lit/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder;
+     241: invokevirtual #271                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData$TooltipDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData;
+     244: invokevirtual #274                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/StyleData$StyleDataBuilder.tooltip:(Lit/hurts/sskirillss/relics/items/relics/base/data/style/TooltipData;)Lit/hurts/sskirillss/relics/items/relics/base/data/style/StyleData$StyleDataBuilder;
+     247: invokestatic  #280                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData.builder:()Lit/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData$BeamsDataBuilder;
+     250: ldc_w         #285                // int -12188841
+     253: invokevirtual #286                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData$BeamsDataBuilder.startColor:(I)Lit/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData$BeamsDataBuilder;
+     256: ldc_w         #292                // int 11020230
+     259: invokevirtual #293                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData$BeamsDataBuilder.endColor:(I)Lit/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData$BeamsDataBuilder;
+     262: invokevirtual #296                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData$BeamsDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData;
+     265: invokevirtual #299                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/StyleData$StyleDataBuilder.beams:(Lit/hurts/sskirillss/relics/items/relics/base/data/style/BeamsData;)Lit/hurts/sskirillss/relics/items/relics/base/data/style/StyleData$StyleDataBuilder;
+     268: invokevirtual #303                // Method it/hurts/sskirillss/relics/items/relics/base/data/style/StyleData$StyleDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/style/StyleData;
+     271: invokevirtual #306                // Method it/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder.style:(Lit/hurts/sskirillss/relics/items/relics/base/data/style/StyleData;)Lit/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder;
+     274: invokevirtual #310                // Method it/hurts/sskirillss/relics/items/relics/base/data/RelicData$RelicDataBuilder.build:()Lit/hurts/sskirillss/relics/items/relics/base/data/RelicData;
+     277: areturn
+
+  public void curioTick(top.theillusivec4.curios.api.SlotContext, net.minecraft.world.item.ItemStack);
+    Code:
+       0: aload_1
+       1: invokevirtual #313                // Method top/theillusivec4/curios/api/SlotContext.entity:()Lnet/minecraft/world/entity/LivingEntity;
+       4: astore_3
+       5: aload_3
+       6: invokevirtual #319                // Method net/minecraft/world/entity/LivingEntity.level:()Lnet/minecraft/world/level/Level;
+       9: astore        4
+      11: aload         4
+      13: getfield      #325                // Field net/minecraft/world/level/Level.isClientSide:Z
+      16: ifeq          20
+      19: return
+      20: aload         4
+      22: aload_2
+      23: invokestatic  #331                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.getEntityFromStack:(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/LivingEntity;
+      26: astore        5
+      28: aload         5
+      30: ifnonnull     34
+      33: return
+      34: aload         5
+      36: invokevirtual #335                // Method net/minecraft/world/entity/LivingEntity.isDeadOrDying:()Z
+      39: ifeq          47
+      42: aload_2
+      43: invokestatic  #339                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.resetData:(Lnet/minecraft/world/item/ItemStack;)V
+      46: return
+      47: aload_2
+      48: aload_3
+      49: aload         5
+      51: invokestatic  #343                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.getTeleportPos:(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/core/BlockPos;
+      54: ifnull        61
+      57: iconst_1
+      58: goto          62
+      61: iconst_0
+      62: invokestatic  #347                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.setTeleportSafe:(Lnet/minecraft/world/item/ItemStack;Z)V
+      65: aload_2
+      66: invokestatic  #351                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.getGlowingTime:(Lnet/minecraft/world/item/ItemStack;)I
+      69: istore        6
+      71: iload         6
+      73: ifgt          77
+      76: return
+      77: aload_2
+      78: invokestatic  #355                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.getStackTime:(Lnet/minecraft/world/item/ItemStack;)I
+      81: istore        7
+      83: iload         6
+      85: iconst_1
+      86: if_icmpne     105
+      89: aload         4
+      91: aconst_null
+      92: aload_3
+      93: invokevirtual #358                // Method net/minecraft/world/entity/LivingEntity.blockPosition:()Lnet/minecraft/core/BlockPos;
+      96: getstatic     #362                // Field net/minecraft/sounds/SoundEvents.AMETHYST_BLOCK_BREAK:Lnet/minecraft/sounds/SoundEvent;
+      99: getstatic     #368                // Field net/minecraft/sounds/SoundSource.PLAYERS:Lnet/minecraft/sounds/SoundSource;
+     102: invokevirtual #374                // Method net/minecraft/world/level/Level.playSound:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/core/BlockPos;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;)V
+     105: aload         4
+     107: invokevirtual #378                // Method net/minecraft/world/level/Level.getGameTime:()J
+     110: l2i
+     111: istore        8
+     113: iload         7
+     115: ifne          128
+     118: iload         8
+     120: istore        7
+     122: iinc          6, -1
+     125: goto          154
+     128: iload         8
+     130: iload         7
+     132: isub
+     133: istore        9
+     135: iload         9
+     137: ifle          154
+     140: iload         7
+     142: iload         9
+     144: iadd
+     145: istore        7
+     147: iload         6
+     149: iload         9
+     151: isub
+     152: istore        6
+     154: aload_2
+     155: iload         7
+     157: invokestatic  #382                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.setStackTime:(Lnet/minecraft/world/item/ItemStack;I)V
+     160: aload_2
+     161: iload         6
+     163: invokestatic  #386                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.setGlowingTime:(Lnet/minecraft/world/item/ItemStack;I)V
+     166: return
+
+  public void castActiveAbility(net.minecraft.world.item.ItemStack, net.minecraft.world.entity.player.Player, java.lang.String, it.hurts.sskirillss.relics.items.relics.base.data.cast.misc.CastType, it.hurts.sskirillss.relics.items.relics.base.data.cast.misc.CastStage);
+    Code:
+       0: aload_3
+       1: ldc           #20                 // String glowing_scour
+       3: invokevirtual #389                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+       6: ifne          10
+       9: return
+      10: aload_2
+      11: invokevirtual #395                // Method net/minecraft/world/entity/player/Player.getCommandSenderWorld:()Lnet/minecraft/world/level/Level;
+      14: astore        6
+      16: aload         6
+      18: getfield      #325                // Field net/minecraft/world/level/Level.isClientSide:Z
+      21: ifeq          25
+      24: return
+      25: aload         6
+      27: aload_1
+      28: invokestatic  #331                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.getEntityFromStack:(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/LivingEntity;
+      31: astore        7
+      33: aload         7
+      35: ifnonnull     39
+      38: return
+      39: aload_2
+      40: aload         7
+      42: invokestatic  #343                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.getTeleportPos:(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/core/BlockPos;
+      45: astore        8
+      47: aload         8
+      49: ifnonnull     58
+      52: aload_1
+      53: iconst_0
+      54: invokestatic  #347                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.setTeleportSafe:(Lnet/minecraft/world/item/ItemStack;Z)V
+      57: return
+      58: aload         8
+      60: aload         7
+      62: invokevirtual #358                // Method net/minecraft/world/entity/LivingEntity.blockPosition:()Lnet/minecraft/core/BlockPos;
+      65: invokestatic  #400                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.getMovementOnTeleport:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/phys/Vec3;
+      68: ldc2_w        #404                // double 0.12d
+      71: invokevirtual #406                // Method net/minecraft/world/phys/Vec3.scale:(D)Lnet/minecraft/world/phys/Vec3;
+      74: astore        9
+      76: aload_2
+      77: aload         7
+      79: aload         8
+      81: aload         9
+      83: invokestatic  #412                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.teleportToTarget:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/phys/Vec3;)V
+      86: aload_0
+      87: aload_1
+      88: ldc           #20                 // String glowing_scour
+      90: aload_1
+      91: ldc           #20                 // String glowing_scour
+      93: invokestatic  #416                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/ItemUtils.getCooldownStat:(Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;)I
+      96: invokevirtual #422                // Method setAbilityCooldown:(Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;I)V
+      99: aload_0
+     100: aload_2
+     101: aload_1
+     102: iconst_1
+     103: invokevirtual #428                // Method spreadRelicExperience:(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;I)V
+     106: return
+
+  public static void onPlayerAttack(net.neoforged.neoforge.event.entity.living.LivingDamageEvent$Post);
+    Code:
+       0: aconst_null
+       1: astore_1
+       2: aload_0
+       3: invokevirtual #432                // Method net/neoforged/neoforge/event/entity/living/LivingDamageEvent$Post.getSource:()Lnet/minecraft/world/damagesource/DamageSource;
+       6: invokevirtual #438                // Method net/minecraft/world/damagesource/DamageSource.getEntity:()Lnet/minecraft/world/entity/Entity;
+       9: astore        5
+      11: aload         5
+      13: instanceof    #444                // class net/minecraft/world/entity/projectile/Projectile
+      16: ifeq          50
+      19: aload         5
+      21: checkcast     #444                // class net/minecraft/world/entity/projectile/Projectile
+      24: astore_2
+      25: aload_2
+      26: invokevirtual #446                // Method net/minecraft/world/entity/projectile/Projectile.getOwner:()Lnet/minecraft/world/entity/Entity;
+      29: astore        5
+      31: aload         5
+      33: instanceof    #396                // class net/minecraft/world/entity/player/Player
+      36: ifeq          50
+      39: aload         5
+      41: checkcast     #396                // class net/minecraft/world/entity/player/Player
+      44: astore_3
+      45: aload_3
+      46: astore_1
+      47: goto          77
+      50: aload_0
+      51: invokevirtual #432                // Method net/neoforged/neoforge/event/entity/living/LivingDamageEvent$Post.getSource:()Lnet/minecraft/world/damagesource/DamageSource;
+      54: invokevirtual #438                // Method net/minecraft/world/damagesource/DamageSource.getEntity:()Lnet/minecraft/world/entity/Entity;
+      57: astore        5
+      59: aload         5
+      61: instanceof    #396                // class net/minecraft/world/entity/player/Player
+      64: ifeq          77
+      67: aload         5
+      69: checkcast     #396                // class net/minecraft/world/entity/player/Player
+      72: astore        4
+      74: aload         4
+      76: astore_1
+      77: aload_1
+      78: ifnonnull     82
+      81: return
+      82: aload_1
+      83: invokevirtual #395                // Method net/minecraft/world/entity/player/Player.getCommandSenderWorld:()Lnet/minecraft/world/level/Level;
+      86: astore_2
+      87: aload_1
+      88: getstatic     #449                // Field it/hurts/octostudios/reliquified_lenders_cataclysm/init/ItemRegistry.SCOURING_EYE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      91: invokevirtual #455                // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      94: checkcast     #461                // class net/minecraft/world/item/Item
+      97: invokestatic  #463                // Method it/hurts/sskirillss/relics/utils/EntityUtils.findEquippedCurio:(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/item/Item;)Lnet/minecraft/world/item/ItemStack;
+     100: astore_3
+     101: aload_0
+     102: invokevirtual #469                // Method net/neoforged/neoforge/event/entity/living/LivingDamageEvent$Post.getEntity:()Lnet/minecraft/world/entity/LivingEntity;
+     105: astore        4
+     107: aload_2
+     108: getfield      #325                // Field net/minecraft/world/level/Level.isClientSide:Z
+     111: ifne          138
+     114: aload_3
+     115: invokevirtual #471                // Method net/minecraft/world/item/ItemStack.isEmpty:()Z
+     118: ifne          138
+     121: aload         4
+     123: invokevirtual #335                // Method net/minecraft/world/entity/LivingEntity.isDeadOrDying:()Z
+     126: ifne          138
+     129: aload         4
+     131: aload_1
+     132: invokevirtual #476                // Method net/minecraft/world/entity/LivingEntity.equals:(Ljava/lang/Object;)Z
+     135: ifeq          139
+     138: return
+     139: aload_3
+     140: aload_2
+     141: invokevirtual #378                // Method net/minecraft/world/level/Level.getGameTime:()J
+     144: l2i
+     145: invokestatic  #382                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.setStackTime:(Lnet/minecraft/world/item/ItemStack;I)V
+     148: aload_3
+     149: aload_3
+     150: invokestatic  #477                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.getGlowingTimeStat:(Lnet/minecraft/world/item/ItemStack;)I
+     153: invokestatic  #386                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.setGlowingTime:(Lnet/minecraft/world/item/ItemStack;I)V
+     156: aload_3
+     157: aload         4
+     159: invokevirtual #480                // Method net/minecraft/world/entity/LivingEntity.getUUID:()Ljava/util/UUID;
+     162: invokevirtual #484                // Method java/util/UUID.toString:()Ljava/lang/String;
+     165: invokestatic  #490                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.setTargetUUID:(Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;)V
+     168: aload_3
+     169: iconst_0
+     170: invokestatic  #494                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.setPlayerDied:(Lnet/minecraft/world/item/ItemStack;Z)V
+     173: return
+
+  public static void onPlayerDeath(net.neoforged.neoforge.event.entity.living.LivingDeathEvent);
+    Code:
+       0: aload_0
+       1: invokevirtual #497                // Method net/neoforged/neoforge/event/entity/living/LivingDeathEvent.getEntity:()Lnet/minecraft/world/entity/LivingEntity;
+       4: astore_2
+       5: aload_2
+       6: instanceof    #396                // class net/minecraft/world/entity/player/Player
+       9: ifeq          20
+      12: aload_2
+      13: checkcast     #396                // class net/minecraft/world/entity/player/Player
+      16: astore_1
+      17: goto          21
+      20: return
+      21: aload_1
+      22: getstatic     #449                // Field it/hurts/octostudios/reliquified_lenders_cataclysm/init/ItemRegistry.SCOURING_EYE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      25: invokevirtual #455                // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      28: checkcast     #461                // class net/minecraft/world/item/Item
+      31: invokestatic  #463                // Method it/hurts/sskirillss/relics/utils/EntityUtils.findEquippedCurio:(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/item/Item;)Lnet/minecraft/world/item/ItemStack;
+      34: astore_2
+      35: aload_1
+      36: invokevirtual #395                // Method net/minecraft/world/entity/player/Player.getCommandSenderWorld:()Lnet/minecraft/world/level/Level;
+      39: getfield      #325                // Field net/minecraft/world/level/Level.isClientSide:Z
+      42: ifne          52
+      45: aload_2
+      46: invokevirtual #471                // Method net/minecraft/world/item/ItemStack.isEmpty:()Z
+      49: ifeq          53
+      52: return
+      53: aload_2
+      54: iconst_1
+      55: invokestatic  #494                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.setPlayerDied:(Lnet/minecraft/world/item/ItemStack;Z)V
+      58: return
+
+  private static java.lang.Boolean lambda$constructDefaultRelicData$1(net.minecraft.world.entity.player.Player, net.minecraft.world.item.ItemStack);
+    Code:
+       0: aload_1
+       1: invokestatic  #500                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.isTeleportAllowed:(Lnet/minecraft/world/item/ItemStack;)Z
+       4: invokestatic  #504                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+       7: areturn
+
+  private static java.lang.Boolean lambda$constructDefaultRelicData$0(net.minecraft.world.entity.player.Player, net.minecraft.world.item.ItemStack);
+    Code:
+       0: aload_1
+       1: invokestatic  #510                // Method it/hurts/octostudios/reliquified_lenders_cataclysm/utils/relics/ScouringEyeUtils.getTargetUUID:(Lnet/minecraft/world/item/ItemStack;)Ljava/lang/String;
+       4: invokevirtual #514                // Method java/lang/String.isEmpty:()Z
+       7: ifne          14
+      10: iconst_1
+      11: goto          15
+      14: iconst_0
+      15: invokestatic  #504                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      18: areturn
+}
